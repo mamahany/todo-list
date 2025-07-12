@@ -215,13 +215,13 @@ body{
     align-items: center;
 }
 .add-todo-form h2{
-    color: var(--primary);
+    color: var(--primary-color);
     opacity: 0.7;
     font-size: 20px;
 }
 .add-todo-form h3{
     font-size: 17px;
-    color: var(--primary);
+    color: var(--primary-color);
 }
 .add-todo-form > div{
     display: flex;
