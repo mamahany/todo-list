@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets//icons/2duit.ico" type="image/x-icon">
+    <title>Duit</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="user-info">
+                <div class="info-area">
+                    <div>
+                        <h2>Hello <span class="username">John Doe</span></h2>
+                        <button class="change-username-btn"><img src="./assets/icons/user-pen.png" alt=""></button>
+                    </div>
+                    <div class="toggle-sidebar"><img src="./assets/icons/sidebar.png" class="sidebar-img" alt="hide/show sidebar"></div>
+                </div>
+                <form class="change-username-form">
+                    <input type="text" placeholder="New Name">
+                    <button type="submit">Done</button>
+                </form>
+            </div>
+            <div class="defaults">
+                <div class="time-based">
+                    <div class="today-div">
+                        <img src="./assets/icons/calendar-clock.png" alt="">
+                        <button>Today</button>
+                        <span class="today-span">0</span>
+                    </div>
+                    <div class="upcoming-div">
+                        <img src="./assets/icons/sleep.png" alt="">
+                        <button>Upcoming</button>
+                        <span class="upcoming-span">0</span>  
+                    </div>
+                </div>
+                <div class="priority-based">
+                    <h3>Priority</h3>
+                    <div class="red">
+                        <img src="./assets/icons/flame.png" alt="">
+                        <button>High Priority</button>
+                    </div>
+                   <div class="blue">
+                        <img src="./assets/icons/pin.png" alt="">
+                        <button>Medium Priority</button>
+                    </div>
+                    <div class="yellow">
+                        <img src="./assets/icons/low.png" alt="" style="opacity: 0.6;">
+                        <button>Low Priority</button>
+                    </div>
+                </div>
+            </div>
+            <div class="add-project">
+                <button class="add-project-btn">Add new project</button>
+                <form class="add-project-form">
+                    <input type="text" placeholder="Project Name">
+                    <button type="submit">Add</button>
+                </form>
+            </div>
+            <div class="user-projects">
+                <h3>Your Projects</h3>
+            </div>
+        </div>
+        <div class="content">
+            <button class="new-todo-btn" type="submit">New Todo +</button>
+            <div class="todos">
+        </div>
+        </div>
+        <dialog class="todo-dialog">
+            <form class="add-todo-form">
+                <div class="form-head"><h2>Add New Todo</h2><button class="close-dialog-btn" type="button" onclick="document.querySelector('dialog').close()"><img src="./assets/icons/trash.png"></button></div>
+                <input required name="title" type="text" placeholder="Title">
+                <div>
+                    <div class="select-list">
+                        <h3>Priority</h3>
+                        <select required name="priority" id="">
+                            <option value="high">High</option>
+                            <option selected value="medium">Medium</option>
+                            <option value="low">Low</option>
+                        </select>
+                    </div>
+                    <div class="select-date">
+                        <h3>DueDate</h3>
+                        <input type="date" required name="dueDate">
+                    </div>
+                </div>
+                <div><textarea id="details" name="details" placeholder="Details" rows="5"></textarea></div>
+                <button type="submit">Done</button>
+            </form>
+        </dialog>
+    </div>
+</body>
+</html>
